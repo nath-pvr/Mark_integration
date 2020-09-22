@@ -1,0 +1,78 @@
+span {
+    color: red;
+}
+
+#mark{
+    color: red;
+    text-decoration: underline;
+}
+
+/* debut partie 1 */
+
+header {
+    height: 100vh;
+    background-image: url("../img/ballot_paille.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* fin partie 1 */
+
+/* debut partie 2 */
+
+#part2 {
+
+    margin-top: 25%;
+}
+
+#star::before{
+    size: 18px;    
+    position: absolute;
+    left: 0;
+    content:"\2606" ;
+    color: red;
+}
+
+#heart::before{
+    size: 18px;
+    position: absolute;
+    left: 0;
+    content: "\2661";
+    color: red;
+}
+
+#moon::before{
+    size: 18px;
+    position: absolute;
+    left: 0;
+    content: "\263E";
+    color: red;
+    transform: rotate(-45deg);
+}
+
+/* fin partie 2 */
+
+/* debut partie 3 */
+
+#part3{
+
+    background-position: bottom;
+    background-color: #cc3333 ;
+    background-size: cover;
+}
+
+#redGroup{
+    padding-top: 150px;
+}
+
+#disc{
+color: #ffffff  ;
+text-decoration: underline;
+}
+
+#paragraphs{
+    margin-top: 60px;
+}
+
+/* fin partie 3 */
