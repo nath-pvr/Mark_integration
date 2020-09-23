@@ -1,13 +1,177 @@
+/* general */
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+@font-face {
+    font-family: 'Aileron';
+    src: url(../font/Aileron-Regular-webfont.woff);
+}
+
+p {
+    font-family: 'aileron';
+}
+
+h1 {
+    font-family: 'caladea';
+}
+
+h2 {
+    font-family: 'caladea';
+}
+
 span {
     color: red;
 }
 
-#mark{
+#mark {
     color: red;
     text-decoration: underline;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* debut partie 1 */
+
+/* debutMenuBurger */
+
+/* debutAnimation */
+
+.with--sidebar .menu {
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.site-pusher:hover #header__icon, .site-pusher:hover #header__icon::before, .site-pusher:hover #header__icon::after {
+    background-color: red;
+}
+
+#header__icon::before:hover {
+    transform: translateY(-8px);
+}
+
+#header__icon::after:hover {
+    transform: translateY(8px);
+}
+
+/* debutCrossAnimation */
+
+.with--sidebar .site-pusher:hover #header__icon {
+    background-color: transparent;
+}
+
+.with--sidebar #header__icon {
+    background: transparent;
+}
+
+.with--sidebar #header__icon::before {
+    transform: translateY(0) rotate(45deg);
+    background-color: red;
+}
+
+.with--sidebar #header__icon::after {
+    transform: translateY(0) rotate(-45deg);
+    background-color: red;
+}
+
+.with--sidebar #header__icon::before, .with--sidebar #header__icon::after {
+    transform-origin: 50% 50%;
+}
+
+.with--sidebar #header__icon {
+    transition: background 0.5s;
+}
+
+/* finCrossAnimation */
+
+/* finAnimation */
+
+#menu-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 280px;
+}
+
+.site-pusher {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+#header__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 22px;
+    height: 2px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: black;
+}
+
+#header__icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-6px);
+    transition: transform 0.5s;
+}
+
+#header__icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(6px);
+    transition: transform 0.5s;
+}
+
+.site-pusher:hover {
+    cursor: pointer;
+}
+
+.menu {
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transform: translateY(-280px);
+}
+
+.menu a {
+    display: block;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: grey;
+}
+
+/* finMenuBurger  */
 
 header {
     height: 100vh;
@@ -25,24 +189,21 @@ header {
     margin-top: 25%;
 }
 
-#star::before{
-    size: 18px;    
+#star::before {
     position: absolute;
     left: 0;
-    content:"\2606" ;
+    content: "\2606";
     color: red;
 }
 
-#heart::before{
-    size: 18px;
+#heart::before {
     position: absolute;
     left: 0;
     content: "\2661";
     color: red;
 }
 
-#moon::before{
-    size: 18px;
+#moon::before {
     position: absolute;
     left: 0;
     content: "\263E";
@@ -54,23 +215,23 @@ header {
 
 /* debut partie 3 */
 
-#part3{
-
+#part3 {
     background-position: bottom;
-    background-color: #cc3333 ;
+    background-color: #cc3333;
     background-size: cover;
 }
 
-#redGroup{
+#redGroup {
     padding-top: 150px;
+    flex-wrap: wrap;
 }
 
-#disc{
-color: #ffffff  ;
-text-decoration: underline;
+#disc {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-#paragraphs{
+#paragraphs {
     margin-top: 60px;
 }
 
