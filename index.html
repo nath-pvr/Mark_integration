@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/icons/faviconMark.png">
+    <script src="https://kit.fontawesome.com/e80851bb12.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <!-- debut PARTIE1 -->
     <main>
         <header>
+
+            <!-- debut MENU -->
+            <div class="menu-container" id="menu-container">
+                <div class="site-pusher" id="site-pusher">
+                    <span class="header__icon" id="header__icon"></span>
+                </div>
+                <nav class="menu" id="menu">
+                    <ul>
+                        <li><a href="https://twitter.com/" target="blank"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://www.google+.com/" target="blank"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://dribbble.com/" target="blank"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="https://www.google.com/" target="blank"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- fin MENU -->
+
             <div class="container">
                 <div class="row vh-100">
                     <div class="col-12 my-auto">
@@ -40,7 +66,7 @@
 
 
         <div class="row justify-content-end">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <h2 class="">Introducing <span id="mark">Mark</span></h2>
                 <p>Proin rhoncus ligula nec dictum volutpat. Curabitur eu magna vel massa laoreet condimentum.
                     Cras
@@ -51,11 +77,7 @@
 
         <div class="container">
 
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="assets/img/statue_liberte.jpg" class="img-fluid" alt="Responsive image">
-                </div>
-
+            <div class="row flex-row-reverse">
 
                 <div class="col-12 col-md-5 offset-md-1 ">
                     <div class="paragraph-right">
@@ -84,6 +106,9 @@
                         <!-- fin lune -->
                     </div>
                 </div>
+                <div class="col-12 col-md-6">
+                    <img src="assets/img/statue_liberte.jpg" class="img-fluid" alt="Responsive image">
+                </div>
             </div>
         </div>
 
@@ -96,20 +121,21 @@
 
         <div class="container" id="redGroup">
 
-            <div class="row justify-content-end" id="disc">
-                <h2>Discover why everybody loves Mark.</h2>
+            <div class="row">
+                <div class="offset-md-4 col-md-7 text-right" id="disc">
+                    <h2>Discover why everybody loves Mark.</h2>
+                </div>
             </div>
-
 
             <div class="container" id="paragraphs">
 
-                <div class="row justify-content-end">
+                <div class="row">
 
                     <div class="col-12 col-md-6">
 
                         <div class="row">
 
-                            <div class="col-10">
+                            <div class="col-10 text-right">
                                 <!-- BlazingPerformance -->
                                 <h3>Blazing performance</h3>
                                 <p id="BlazP">
@@ -121,11 +147,12 @@
                                     gravida
                                     lacinia. Aenean sollicitudin convallis augue et tincidunt.</p> <br>
                             </div>
-                            <div class="col-1">
+                            <div class="col-2 w-100 ">
                                 <img src="assets/icons/icon1.png" alt="icone d'une flame">
                             </div>
                             <!-- fin BlazingPerformance -->
-                            <div class="col-10">
+
+                            <div class="col-10 text-right">
                                 <!-- AwesomeCustom -->
                                 <h3>Awesome customization</h3>
                                 <p id="AweC">
@@ -139,7 +166,7 @@
                                     nulla.
                                 </p> <br>
                             </div>
-                            <div class="col-1">
+                            <div class="col-2 w-100">
                                 <img src="assets/icons/icon3.png" alt="icone parametre">
                             </div>
                             <!-- fin AwesomeCustom -->
@@ -148,7 +175,7 @@
                     </div>
 
 
-                    <div class="col-12 col-md-6 ">
+                    <div class="col-12 col-md-6 text-right ">
 
                         <div class="row">
 
@@ -163,13 +190,13 @@
 
                             </div>
 
-                            <div class="col-1">
+                            <div class="col-2 w-100">
                                 <img src="assets/icons/icon2.png" alt="icone eclair">
                             </div>
                             <!-- fin lightingFast -->
 
                             <!-- CSS3 -->
-                            <div class="col-10">
+                            <div class="col-10 text-right">
                                 <h3>Clean & standardized code</h3>
                                 <p id="CSS3">
                                     Nulla quis dui venenatis, egestas sapien vitae, lobortis massa. Cras eget nisl eget
@@ -177,13 +204,13 @@
                                     aliquet dignissim. Vivamus at accumsan leo.</p> <br>
                             </div>
 
-                            <div class="col-1">
+                            <div class="col-2 w-100">
                                 <img src="assets/icons/icon4.png" alt="icone CSS3">
                             </div>
                             <!-- fin CSS3 -->
 
                             <!-- cloud -->
-                            <div class="col-10">
+                            <div class="col-10 text-right">
                                 <h3>Use anywhere</h3>
                                 <p id="cloud"> In egestas enim eu erat ultrices tempor. Fusce sed risus efficitur,
                                     interdum
@@ -192,7 +219,7 @@
                                     sit amet in nisi.</p> <br>
                             </div>
 
-                            <div class="col-1">
+                            <div class="col-2 w-100">
                                 <img src="assets/icons/icon5.png" alt="icone cloud">
                             </div>
                             <!-- fin cloud -->
@@ -203,8 +230,14 @@
         </div>
 
     </section>
-
     <!-- fin PARTIE3 -->
+    <div class="site--cache" id="site-cache"></div>
+
+    <!-- appelsJs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/JS/app.js"></script>
+    <!-- finAppelsJs -->
+
 </body>
 
 </html>
